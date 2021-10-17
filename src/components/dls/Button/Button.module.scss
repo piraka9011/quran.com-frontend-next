@@ -4,15 +4,18 @@
 //    - https://cube.fyi/composition.html#examples (looks like vercel is using similar pattern like this)
 //    - https://cube.fyi/exception.html#why-data-attributes
 
+@use "src/styles/utility";
+
 .base {
   border: none;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
   box-sizing: border-box;
 }
 .withText {
   padding: 0 var(--spacing-small);
+  justify-content: center;
 }
 .withIcon {
   justify-content: center;
@@ -194,6 +197,9 @@
 .circle {
   border-radius: var(--border-radius-circle);
 }
+.pill {
+  border-radius: var(--border-radius-pill);
+}
 
 // variant
 .shadow {
@@ -204,11 +210,7 @@
   background-color: transparent;
   border: none;
   &:hover {
-    background-image: linear-gradient(
-      to right,
-      var(--color-background-lighten),
-      var(--color-background-lighten)
-    );
+    @include utility.lighten-background-color;
   }
 }
 .ghost.primary {
