@@ -10,12 +10,14 @@ const DEFAULT_LANGUAGE = 'en';
  * @param {string} lang
  * @returns {Record<string, Chapter>} chapter
  */
-export const getAllChaptersData = (lang = DEFAULT_LANGUAGE): Record<string, Chapter> => {
+export const getAllChaptersData = (
+  lang = DEFAULT_LANGUAGE,
+): Promise<{ [chapter: string]: Chapter }> => {
   switch (lang) {
     case 'en':
-      return require('../../public/data/chapters/en.json');
+      return import('../../public/data/chapters/en.json').then((data) => data.default);
     default:
-      return require('../../public/data/chapters/en.json');
+      return import('../../public/data/chapters/en.json').then((data) => data.default);
   }
 };
 
