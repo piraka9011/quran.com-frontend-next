@@ -20,6 +20,20 @@ $verseLinkMinWidth: calc(6 * var(--spacing-mega));
   overflow-x: auto;
   &::-webkit-scrollbar {
     -webkit-appearance: none;
+    height: 0;
+  }
+  & > .verseLink {
+    min-width: $verseLinkMinWidth;
+  }
+
+  & > .verseLink:first-child {
+    margin-left: var(--flow-side-spacing, 0);
+  }
+  & > .verseLink:last-child {
+    margin-right: var(--flow-side-spacing, 0);
+  }
+  & > .verseLink + .verseLink {
+    margin-left: var(--spacing-small);
   }
   & > .verseLink {
     min-width: $verseLinkMinWidth;

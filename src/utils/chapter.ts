@@ -35,11 +35,14 @@ export const getChapterData = (id: string, lang: string = DEFAULT_LANGUAGE): Cha
  * Given a pageId, get chapter ids from a json file
  *
  * @param {string} pageId
- * @returns {string[]} chapterIds
+ * @returns {Promise<string[]>} chapterIds
  */
-export const getChapterIdsForPage = (pageId: string): string[] => {
-  const pagesData = require('../../public/data/page-to-chapter-mappings.json');
-  return pagesData[pageId];
+export const getChapterIdsForPage = (pageId: string): Promise<string[]> => {
+  return new Promise((res) => {
+    import(`../../public/data/page-to-chapter-mappings.json`).then((data) => {
+      res(data.default[pageId]);
+    });
+  });
 };
 
 /**
@@ -51,6 +54,38 @@ export const getChapterIdsForPage = (pageId: string): string[] => {
 export const getChapterIdsForJuz = (juzId: string): string[] => {
   const juzsData = require('../../public/data/juz-to-chapter-mappings.json');
   return juzsData[juzId];
+};
+
+type ChapterAndVerseMapping = { [chapter: string]: string };
+/**
+ * get ChapterAndVerseMapping for all juzs
+ *
+ * @returns {[juz: string]: ChapterAndVerseMapping}
+ */
+export const getAllJuzMappings = (): Promise<{ [juz: string]: ChapterAndVerseMapping }> => {
+  return import('../../public/data/juz-to-chapter-verse-mappings.json').then(
+    (data) => data.default,
+  );
+};
+
+/**
+ * Given a juzId get a chapter + verse mapping for this juz
+ *
+ * @param {string} juzId
+ * @returns {[chapter: string]: string}
+ *
+ * original data source: https://api.quran.com/api/v4/juzs
+ *
+ * Example:
+ * getChapterAndVerseMappingForJuz("1") // { "1": "1-7", "2" : "1-141"}
+ * -> juz "1" contains chapter "1" with verse "1-7" and chapter "2" with verse "1-141"
+ *
+ */
+export const getChapterAndVerseMappingForJuz = async (
+  juzId: string,
+): Promise<{ [chapter: string]: string }> => {
+  const juzVerseMapping = await getAllJuzMappings();
+  return juzVerseMapping[juzId];
 };
 
 /**

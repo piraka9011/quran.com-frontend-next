@@ -2,7 +2,6 @@
 import range from 'lodash/range';
 
 import { getAllChaptersData, getChapterData } from './chapter';
-import * as sampleVerse from './sample-verse.json';
 
 import Verse from 'types/Verse';
 import Word from 'types/Word';
@@ -83,14 +82,6 @@ export const getFirstWordOfSurah = (
     isFirstWordOfSurah: locationSplits[1] === '1' && locationSplits[2] === '1',
   };
 };
-
-/**
- * get sample verse data
- * it currently return 2:5 (Al baqarah verse 5)
- *
- * @returns {Verse} verse
- */
-export const getSampleVerse = () => sampleVerse;
 
 /**
  * sort the the word location of the verses
@@ -192,9 +183,8 @@ export const sortVersesObjectByVerseKeys = (object: Record<string, any>): Record
  * @returns
  */
 
-export const makeVerseKey = (chapterNumber: number, verseNumber: number): string => {
-  return `${chapterNumber}:${verseNumber}`;
-};
+export const makeVerseKey = (chapterNumber: number, verseNumber: number): string =>
+  `${chapterNumber}:${verseNumber}`;
 
 /**
  * make wordLocation from verseKey and wordPosition, example "1:1:2"
@@ -203,9 +193,8 @@ export const makeVerseKey = (chapterNumber: number, verseNumber: number): string
  * @param {string} wordPosition
  * @returns {string} wordLocation
  */
-export const makeWordLocation = (verseKey: string, wordPosition: number): string => {
-  return `${verseKey}:${wordPosition}`;
-};
+export const makeWordLocation = (verseKey: string, wordPosition: number): string =>
+  `${verseKey}:${wordPosition}`;
 
 /**
  * Get the words of each verse. This can be used to extend
@@ -308,10 +297,8 @@ export const isFirstVerseOfSurah = (verseNumber: number): boolean => verseNumber
  * @param {number} verseNumber
  * @returns {boolean}
  */
-export const isLastVerseOfSurah = (chapterNumber: string, verseNumber: number): boolean => {
-  const { versesCount } = getChapterData(chapterNumber);
-  return verseNumber === versesCount;
-};
+export const isLastVerseOfSurah = (chapterNumber: string, verseNumber: number): boolean =>
+  verseNumber === getChapterData(chapterNumber).versesCount;
 
 export const getChapterFirstAndLastVerseKey = (chapterId: string) => {
   const chapterData = getChapterData(chapterId);
@@ -319,4 +306,26 @@ export const getChapterFirstAndLastVerseKey = (chapterId: string) => {
     makeVerseKey(Number(chapterData.id), 1),
     makeVerseKey(Number(chapterData.id), chapterData.versesCount),
   ];
+};
+
+/**
+ * Shorten a text by setting the maximum number of characters
+ * by the value of the parameter and adding "..." at the end.
+ *
+ * @param {string} text
+ * @param {number} length
+ * @returns {string}
+ */
+export const shortenVerseText = (text: string, length = 150): string => {
+  const characters = text.split('', length);
+  let shortenedText = '';
+  for (let index = 0; index < characters.length; index += 1) {
+    const character = characters[index];
+    if (shortenedText.length === length - 1) {
+      shortenedText = `${shortenedText}${character}...`;
+      break;
+    }
+    shortenedText = `${shortenedText}${character}`;
+  }
+  return shortenedText;
 };
