@@ -4,11 +4,11 @@ import TranslatedName from './TranslatedName';
 interface Chapter {
   id: number | string;
   versesCount: number;
-  bismillahPre: boolean;
-  revelationOrder: number;
+  bismillahPre?: boolean;
+  revelationOrder?: number;
   revelationPlace: string;
   pages: Array<number>;
-  nameComplex: string;
+  nameComplex?: string;
   nameSimple: string;
   nameArabic: string;
   translatedName: TranslatedName;
