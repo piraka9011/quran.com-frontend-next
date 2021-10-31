@@ -1,6 +1,21 @@
 {
-  "salahSubtitle": "Search prayer time for any location",
-  "sunnahSubtitle": "The Hadith of Prophet Muhammad(PBUH)",
-  "quranAudio": "Noble Quran in audio",
-  "quranAudioSubtitle": "Learning & listening at the same time"
+    "footer": {
+        "rights": "All Rights Reserved",
+        "title": "Read, study, and learn The Noble Quran."
+    },
+    "no-bookmarks": "You do not have any bookmarks yet",
+    "recently-read": "Recently Read",
+    "tab": {
+        "bookmarks": "Bookmarks",
+        "popular": "Popular"
+    },
+    "voice": {
+        "trigger": "Quick access to anything"
+    },
+    "welcome": {
+        "desc": "We are actively adding new features and pushing changes. If you run into any issues please do provide feedback.",
+        "feedback-cta": "Provide Feedback",
+        "join-cta": "Join Discord Community",
+        "title": "Welcome to the Pre-Release Beta of the new Quran.com!"
+    }
 }
