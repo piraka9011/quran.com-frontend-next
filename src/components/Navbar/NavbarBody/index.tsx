@@ -57,10 +57,10 @@ const NavbarBody: React.FC = () => {
             variant={ButtonVariant.Ghost}
             className={classNames(styles.logoWrapper, styles.QIcon)}
             size={ButtonSize.Large}
+            shouldFlipOnRTL={false}
           >
             <IconQ />
           </Button>
-          <div className={styles.betaLabel}>{t('beta')}</div>
           <LanguageSelector />
         </div>
       </div>
@@ -83,6 +83,7 @@ const NavbarBody: React.FC = () => {
               variant={ButtonVariant.Ghost}
               onClick={openSearchDrawer}
               shape={ButtonShape.Circle}
+              shouldFlipOnRTL={false}
             >
               <IconSearch />
             </Button>

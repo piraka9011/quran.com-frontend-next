@@ -43,6 +43,7 @@
     "close": "Close",
     "command-bar": {
         "navigations": "Navigations",
+        "no-nav-results": "No navigation results",
         "recent-navigations": "Recent navigations",
         "try-navigating": "Try navigating to"
     },
@@ -125,6 +126,8 @@
         "title": "Search"
     },
     "settings": {
+        "change-reciter": "Change Reciter",
+        "change-translations": "Change Translations",
         "reading-experience": "Reading Experience",
         "reset-cta": "Reset Settings",
         "title": "Settings"

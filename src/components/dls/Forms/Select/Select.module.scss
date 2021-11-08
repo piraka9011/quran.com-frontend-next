@@ -3,7 +3,6 @@
   background: var(--color-background-default);
   display: inline-flex;
   outline: none;
-  border: 1px solid var(--color-background-inverse);
   text-transform: uppercase;
   user-select: none;
   position: relative;
@@ -11,7 +10,11 @@
   border-radius: var(--border-radius-default);
   white-space: nowrap;
   line-height: 0;
+}
+
+.defaultStyledContainer {
   width: calc(8 * var(--spacing-mega));
+  border: 1px solid var(--color-background-inverse);
 }
 
 .smallContainer {
@@ -33,7 +36,7 @@
   width: var(--spacing-mega);
   height: 100%;
   position: absolute;
-  right: 0;
+  inset-inline-end: 0;
   pointer-events: none;
   display: flex;
   -webkit-box-align: center;
@@ -60,9 +63,15 @@
   background: var(--color-background-default);
   font-size: var(--font-size-normal);
   width: calc(100% + var(--spacing-mega));
-  padding: 0 var(--spacing-xxsmall);
   text-transform: none;
   text-rendering: initial;
+}
+
+.defaultStyledSelect {
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: var(--spacing-xxsmall);
+  padding-inline-end: var(--spacing-xxsmall);
 }
 
 .disabledSelect {

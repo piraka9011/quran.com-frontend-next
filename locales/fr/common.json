@@ -43,6 +43,7 @@
     "close": "proche",
     "command-bar": {
         "navigations": "Navigation",
+        "no-nav-results": "Aucun résultat de navigation",
         "recent-navigations": "Navigations récentes",
         "try-navigating": "Essayez de naviguer vers"
     },
@@ -125,6 +126,8 @@
         "title": "Chercher"
     },
     "settings": {
+        "change-reciter": "Changer de récitant",
+        "change-translations": "Modifier les traductions",
         "reading-experience": "Expérience de lecture",
         "reset-cta": "Réinitialiser les options",
         "title": "Paramètres"

@@ -12,7 +12,6 @@ import styles from './NavigationDrawer.module.scss';
 
 import Button, { ButtonShape, ButtonVariant } from 'src/components/dls/Button/Button';
 import Spinner from 'src/components/dls/Spinner/Spinner';
-import LanguageSelector from 'src/components/Navbar/LanguageSelector';
 import { selectNavbar } from 'src/redux/slices/navbar';
 
 const NavigationDrawerBody = dynamic(() => import('./NavigationDrawerBody'), {
@@ -32,12 +31,15 @@ const NavigationDrawer = () => {
           <div className={styles.leftCTA}>
             <Link href="/">
               <a>
-                <Button shape={ButtonShape.Circle} variant={ButtonVariant.Ghost}>
+                <Button
+                  shape={ButtonShape.Circle}
+                  variant={ButtonVariant.Ghost}
+                  shouldFlipOnRTL={false}
+                >
                   <IconQ />
                 </Button>
               </a>
             </Link>
-            <LanguageSelector />
           </div>
         </div>
       }

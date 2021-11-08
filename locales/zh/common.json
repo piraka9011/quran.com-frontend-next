@@ -43,6 +43,7 @@
     "close": "关闭",
     "command-bar": {
         "navigations": "导航",
+        "no-nav-results": "没有导航结果",
         "recent-navigations": "最近的导航",
         "try-navigating": "尝试导航到"
     },
@@ -125,6 +126,8 @@
         "title": "搜索"
     },
     "settings": {
+        "change-reciter": "更改朗诵者",
+        "change-translations": "更改翻译",
         "reading-experience": "阅读体验",
         "reset-cta": "重新设置",
         "title": "设置"

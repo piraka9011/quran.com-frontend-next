@@ -43,6 +43,7 @@
     "close": "ปิด I",
     "command-bar": {
         "navigations": "การนำทาง",
+        "no-nav-results": "ไม่มีผลการนำทาง",
         "recent-navigations": "การนำทางล่าสุด",
         "try-navigating": "ลองไปที่"
     },
@@ -125,6 +126,8 @@
         "title": "ค้นหา"
     },
     "settings": {
+        "change-reciter": "เปลี่ยนผู้เล่า",
+        "change-translations": "เปลี่ยนการแปล",
         "reading-experience": "ประสบการณ์การอ่าน",
         "reset-cta": "คืนค่าการตั้งค่า",
         "title": "การตั้งค่า"

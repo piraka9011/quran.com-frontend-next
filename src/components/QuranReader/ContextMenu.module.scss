@@ -9,12 +9,12 @@
   z-index: var(--z-index-sticky);
   transition: var(--transition-regular);
   width: 100%;
-  top: 0;
+  inset-block-start: 0;
   min-height: var(--spacing-medium);
   @include breakpoints.tablet {
-    top: constants.$navbar-height;
+    inset-block-start: constants.$navbar-height;
     transition: var(--transition-regular);
-    margin-right: 0;
+    margin-inline-end: 0;
   }
   &:after {
     display: block;
@@ -25,7 +25,7 @@
     height: var(--spacing-micro);
     background: var(--color-success-deep);
     position: absolute;
-    bottom: calc(-1 * var(--spacing-micro));
+    inset-block-end: calc(-1 * var(--spacing-micro));
   }
 }
 
@@ -35,7 +35,7 @@
 }
 
 .visibleContainer {
-  top: constants.$navbar-height;
+  inset-block-start: constants.$navbar-height;
 }
 
 .expandedContainer {
@@ -44,7 +44,7 @@
 
 .withVisibleSideBar {
   @include breakpoints.tablet {
-    margin-right: constants.$notes-side-bar-desktop-width;
+    margin-inline-end: constants.$notes-side-bar-desktop-width;
     width: calc(100% - #{constants.$notes-side-bar-desktop-width});
   }
 }
@@ -53,7 +53,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--spacing-micro);
+  padding-block-start: var(--spacing-micro);
+  padding-block-end: var(--spacing-micro);
+  padding-inline-start: var(--spacing-micro);
+  padding-inline-end: var(--spacing-micro);
 }
 
 .leftSection {
@@ -84,7 +87,7 @@
 
 .row {
   display: flex;
-  text-align: left;
+  text-align: start;
 }
 
 .col {

@@ -43,6 +43,7 @@
     "close": "Mbylle",
     "command-bar": {
         "navigations": "Lundrimet",
+        "no-nav-results": "Nuk ka rezultate navigimi",
         "recent-navigations": "Lundrimet e fundit",
         "try-navigating": "Provoni të lundroni në"
     },
@@ -125,6 +126,8 @@
         "title": "Kërko"
     },
     "settings": {
+        "change-reciter": "Ndrysho recituesin",
+        "change-translations": "Ndrysho përkthimet",
         "reading-experience": "Përvoja e të lexuarit",
         "reset-cta": "Rivendos cilësimet",
         "title": "Cilësimet"

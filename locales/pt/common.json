@@ -43,6 +43,7 @@
     "close": "Fechar",
     "command-bar": {
         "navigations": "Navegações",
+        "no-nav-results": "Sem resultados de navegação",
         "recent-navigations": "Navegações recentes",
         "try-navigating": "Tente navegar para"
     },
@@ -125,6 +126,8 @@
         "title": "Procurar"
     },
     "settings": {
+        "change-reciter": "Mudar recitador",
+        "change-translations": "Mudar as traduções",
         "reading-experience": "Experiência de Leitura",
         "reset-cta": "Redefinir as configurações",
         "title": "Definições"
