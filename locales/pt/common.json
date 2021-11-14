@@ -44,6 +44,8 @@
     "command-bar": {
         "navigations": "Navegações",
         "no-nav-results": "Sem resultados de navegação",
+        "placeholder": "O que voce quer ler",
+        "powered-by": "Pesquisa por voz com tecnologia Tarteel.ai",
         "recent-navigations": "Navegações recentes",
         "try-navigating": "Tente navegar para"
     },
@@ -101,6 +103,11 @@
     "pages": "Páginas",
     "pagination-summary": "{{currentResultNumber}} - {{endOfResultNumber}} de {{totalNumberOfResults}} resultados da pesquisa",
     "powered-by": "Distribuído por",
+    "prayer-times": {
+        "calculation-method": "Método de cálculo",
+        "madhab": "Madhab",
+        "title": "Momentos de Oração"
+    },
     "prev": "Anterior",
     "privacy": "Privacidade",
     "q-reflect": "QuranReflect",
@@ -177,5 +184,10 @@
         "suggest": "Por favor, comece a recitar e seu verso aparecerá."
     },
     "wbw": "Palavra por palavra",
+    "word-click": {
+        "no-audio": "Sem áudio",
+        "play-audio": "Tocar áudio",
+        "title": "Clique da palavra"
+    },
     "yes": "sim"
 }

@@ -44,6 +44,8 @@
     "command-bar": {
         "navigations": "Lundrimet",
         "no-nav-results": "Nuk ka rezultate navigimi",
+        "placeholder": "Çfarë doni të lexoni?",
+        "powered-by": "Kërkimi zanor i mundësuar nga Tarteel.ai",
         "recent-navigations": "Lundrimet e fundit",
         "try-navigating": "Provoni të lundroni në"
     },
@@ -101,6 +103,11 @@
     "pages": "Faqet",
     "pagination-summary": "{{currentResultNumber}} - {{endOfResultNumber}} nga {{totalNumberOfResults}} rezultate kërkimi",
     "powered-by": "Mundësuar nga",
+    "prayer-times": {
+        "calculation-method": "Mënyra e Llogaritjes",
+        "madhab": "medhhebi",
+        "title": "Kohët e lutjes"
+    },
     "prev": "E mëparshme",
     "privacy": "Privatësia",
     "q-reflect": "Kurani Reflekto",
@@ -177,5 +184,10 @@
         "suggest": "Ju lutemi filloni të recitoni dhe vargu juaj do të shfaqet."
     },
     "wbw": "Fjalë Për Fjalë",
+    "word-click": {
+        "no-audio": "Nuk ka audio",
+        "play-audio": "Luaj Audio",
+        "title": "Klikoni në fjalë"
+    },
     "yes": "po"
 }

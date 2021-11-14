@@ -44,6 +44,8 @@
     "command-bar": {
         "navigations": "ناوبری ها",
         "no-nav-results": "هیچ نتیجه ناوبری وجود ندارد",
+        "placeholder": "میخواهی چی بخوانی؟",
+        "powered-by": "جستجوی صوتی ارائه شده توسط Tarteel.ai",
         "recent-navigations": "پیمایش های اخیر",
         "try-navigating": "سعی کنید به"
     },
@@ -101,6 +103,11 @@
     "pages": "صفحات",
     "pagination-summary": "{{currentResultNumber}} - {{endOfResultNumber}} از {{totalNumberOfResults}} نتایج جستجو",
     "powered-by": "پشتیبانی شده توسط",
+    "prayer-times": {
+        "calculation-method": "روش محاسبه",
+        "madhab": "مداح",
+        "title": "اوقات نماز"
+    },
     "prev": "قبلی",
     "privacy": "حریم خصوصی",
     "q-reflect": "قرآن انعکاس",
@@ -177,5 +184,10 @@
         "suggest": "لطفا شروع به تلاوت کنید و آیه شما ظاهر می شود."
     },
     "wbw": "کلمه به کلمه",
+    "word-click": {
+        "no-audio": "بی صدا",
+        "play-audio": "پخش صدا",
+        "title": "کلمه کلیک کنید"
+    },
     "yes": "آره"
 }

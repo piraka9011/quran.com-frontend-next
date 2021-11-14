@@ -44,6 +44,8 @@
     "command-bar": {
         "navigations": "Navigasi",
         "no-nav-results": "Tidak ada hasil navigasi",
+        "placeholder": "Apa yang ingin Anda baca?",
+        "powered-by": "Pencarian suara diberdayakan oleh Tarteel.ai",
         "recent-navigations": "Navigasi terbaru",
         "try-navigating": "Coba navigasikan ke"
     },
@@ -101,6 +103,11 @@
     "pages": "halaman",
     "pagination-summary": "{{currentResultNumber}} - {{endOfResultNumber}} dari {{totalNumberOfResults}} hasil penelusuran",
     "powered-by": "Dipersembahkan oleh",
+    "prayer-times": {
+        "calculation-method": "Metode kalkulasi",
+        "madhab": "madhab",
+        "title": "Waktu Sholat"
+    },
     "prev": "Sebelumnya",
     "privacy": "Pribadi",
     "q-reflect": "QuranReflect",
@@ -177,5 +184,10 @@
         "suggest": "Silakan mulai membaca dan ayat Anda akan muncul."
     },
     "wbw": "Kata demi kata",
+    "word-click": {
+        "no-audio": "Tidak ada suara",
+        "play-audio": "Putar Audio",
+        "title": "Klik Kata"
+    },
     "yes": "Ya"
 }

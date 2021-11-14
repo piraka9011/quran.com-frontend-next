@@ -44,6 +44,8 @@
     "command-bar": {
         "navigations": "导航",
         "no-nav-results": "没有导航结果",
+        "placeholder": "你想读什么？",
+        "powered-by": "由 Tarteel.ai 提供支持的语音搜索",
         "recent-navigations": "最近的导航",
         "try-navigating": "尝试导航到"
     },
@@ -101,6 +103,11 @@
     "pages": "页面",
     "pagination-summary": "{{currentResultNumber}} - {{totalNumberOfResults}}搜索结果，共{{endOfResultNumber}}",
     "powered-by": "供电",
+    "prayer-times": {
+        "calculation-method": "计算方法",
+        "madhab": "马达卜",
+        "title": "祷告时间"
+    },
     "prev": "以前的",
     "privacy": "隐私",
     "q-reflect": "古兰经反射",
@@ -177,5 +184,10 @@
         "suggest": "请开始背诵，你的诗句就会出现。"
     },
     "wbw": "逐词地",
+    "word-click": {
+        "no-audio": "无音频",
+        "play-audio": "播放音频",
+        "title": "字点击"
+    },
     "yes": "是的"
 }

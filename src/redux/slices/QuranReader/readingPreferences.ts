@@ -1,33 +1,13 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
+import { getReadingPreferencesInitialState } from 'src/redux/defaultSettings/util';
 import { RootState } from 'src/redux/RootState';
 import resetSettings from 'src/redux/slices/reset-settings';
-import { ReadingPreference, WordByWordType } from 'types/QuranReader';
-
-const DEFAULT_TRANSLATION = 20; // just a placeholder.
-const DEFAULT_TRANSLITERATION = 12; // just a placeholder.
-
-export type ReadingPreferences = {
-  readingPreference: ReadingPreference;
-  showWordByWordTranslation: boolean;
-  selectedWordByWordTranslation: number;
-  showWordByWordTransliteration: boolean;
-  selectedWordByWordTransliteration: number;
-  showTooltipFor: WordByWordType[];
-};
-
-const initialState: ReadingPreferences = {
-  readingPreference: ReadingPreference.Translation,
-  showWordByWordTranslation: false,
-  selectedWordByWordTranslation: DEFAULT_TRANSLATION,
-  showWordByWordTransliteration: false,
-  selectedWordByWordTransliteration: DEFAULT_TRANSLITERATION,
-  showTooltipFor: [WordByWordType.Translation],
-};
+import { ReadingPreference, WordByWordType, WordClickFunctionality } from 'types/QuranReader';
 
 export const readingPreferencesSlice = createSlice({
   name: 'readingPreferences',
-  initialState,
+  initialState: getReadingPreferencesInitialState(),
   reducers: {
     setReadingPreference: (state, action: PayloadAction<ReadingPreference>) => ({
       ...state,
@@ -53,11 +33,17 @@ export const readingPreferencesSlice = createSlice({
       ...state,
       showTooltipFor: action.payload,
     }),
+    setWordClickFunctionality: (state, action: PayloadAction<WordClickFunctionality>) => ({
+      ...state,
+      wordClickFunctionality: action.payload,
+    }),
   },
   // reset the state to initial state
   // when `reset` action is dispatched
   extraReducers: (builder) => {
-    builder.addCase(resetSettings, () => initialState);
+    builder.addCase(resetSettings, (state, action) => {
+      return getReadingPreferencesInitialState(action.payload.locale);
+    });
   },
 });
 
@@ -68,6 +54,7 @@ export const {
   setSelectedWordByWordTranslation,
   setSelectedWordByWordTransliteration,
   setShowTooltipFor,
+  setWordClickFunctionality,
 } = readingPreferencesSlice.actions;
 
 export const selectWordByWordByWordPreferences = (state: RootState) => ({
@@ -79,5 +66,7 @@ export const selectWordByWordByWordPreferences = (state: RootState) => ({
 export const selectShowTooltipFor = (state: RootState) => state.readingPreferences.showTooltipFor;
 export const selectReadingPreference = (state: RootState) =>
   state.readingPreferences.readingPreference;
+export const selectWordClickFunctionality = (state: RootState) =>
+  state.readingPreferences.wordClickFunctionality;
 
 export default readingPreferencesSlice.reducer;
