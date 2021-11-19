@@ -8,6 +8,7 @@
         },
         "play": "Воспроизвести аудио",
         "playback-speed": "Скорость воспроизведения",
+        "playback-speed-unit": "Икс",
         "player": {
             "close": "Закройте аудиоплеер",
             "currently-playing": "Вы сейчас играете",
@@ -47,6 +48,7 @@
         "placeholder": "Что ты хочешь прочитать?",
         "powered-by": "Голосовой поиск на платформе Tarteel.ai",
         "recent-navigations": "Недавние переходы",
+        "search-by-voice": "Голосовой поиск",
         "try-navigating": "Попробуйте перейти к"
     },
     "community": {
@@ -63,6 +65,7 @@
         "decrease": "Снижаться",
         "increase": "Увеличивать"
     },
+    "default-description": "Коран переведен на многие языки в простом и удобном интерфейсе.",
     "developers": "Разработчики",
     "error": {
         "general": "Что-то пошло не так. Пожалуйста, попробуйте еще раз.",
@@ -79,6 +82,7 @@
         "qcf-desc": "Шрифты KPFG обеспечивают более высокое качество, но загружаются дольше и не могут быть скопированы через браузер.",
         "qpc_uthmani_hafs": "QPC Усмани Хафс",
         "quran-font": "Шрифт Корана",
+        "tajweed": "Таджвид",
         "text_indopak": "Индопак",
         "text_uthmani": "Усмани"
     },
@@ -99,13 +103,37 @@
     "next": "Следующий",
     "no": "Нет",
     "none": "Никто",
+    "off": "Выключенный",
+    "on": "На",
     "page": "Страница",
     "pages": "Страницы",
     "pagination-summary": "{{currentResultNumber}} - {{endOfResultNumber}} из {{totalNumberOfResults}} результатов поиска",
     "powered-by": "Питаться от",
     "prayer-times": {
+        "access-denied": "Доступ к местоположению запрещен. Пожалуйста, включите доступ к местоположению, чтобы получать точное время молитвы",
         "calculation-method": "Метод расчета",
+        "calculation-methods": {
+            "Dubai": "Дубай",
+            "Egyptian": "Египтянин",
+            "Karachi": "Карачи",
+            "Kuwait": "Кувейт",
+            "MoonsightingCommittee": "Комитет по наблюдению за луной",
+            "MuslimWorldLeague": "МусульманскийМирлига",
+            "NorthAmerica": "Северная Америка",
+            "Qatark": "Катарк",
+            "Singapore": "Сингапур",
+            "Tehran": "Тегеран",
+            "Turkey": "Турция",
+            "UmmAlQura": "UmmAlQura"
+        },
+        "find-accurate-location": "Найти точное местоположение",
+        "location-access": "Доступ к местоположению",
+        "location-updated": "Обновлено время молитв.",
         "madhab": "Мазхаб",
+        "madhabs": {
+            "Hanafi": "Ханафи",
+            "Shafi": "Шафи"
+        },
         "title": "Время молитв"
     },
     "prev": "Предыдущий",
@@ -134,9 +162,14 @@
     },
     "settings": {
         "change-reciter": "Изменить чтец",
+        "change-tafsirs": "Смена тафсиров",
         "change-translations": "Изменить перевод",
         "reading-experience": "Опыт чтения",
         "reset-cta": "Сбросить настройки",
+        "reset-notif": "Ваши настройки были сброшены до значений по умолчанию",
+        "search-reciter": "Поиск чтеца",
+        "search-tafsirs": "Поиск Тафсиров",
+        "search-translations": "Поиск переводов",
         "title": "Настройки"
     },
     "share": "Делиться",
@@ -175,6 +208,7 @@
     "transliteration": "Транслитерация",
     "type": "Тип",
     "verse": "Стих",
+    "verses": "Стихи",
     "view": "Вид",
     "voice": {
         "ask-permission": "Пожалуйста, разрешите микрофону, чтобы начать использовать голосовой поиск",
@@ -184,6 +218,7 @@
         "suggest": "Пожалуйста, начните читать, и ваш стих появится."
     },
     "wbw": "Слово за слово",
+    "wbw-trans-lang": "Слово за словом язык",
     "word-click": {
         "no-audio": "Нет звука",
         "play-audio": "Воспроизвести аудио",

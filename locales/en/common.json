@@ -8,6 +8,7 @@
         },
         "play": "Play Audio",
         "playback-speed": "Playback Speed",
+        "playback-speed-unit": "x",
         "player": {
             "close": "Close Audio Player",
             "currently-playing": "You are currently playing",
@@ -47,8 +48,8 @@
         "placeholder": "What do you want to read?",
         "powered-by": "Voice search powered by Tarteel.ai",
         "recent-navigations": "Recent navigations",
-        "try-navigating": "Try navigating to",
-        "search-by-voice": "Search by voice"
+        "search-by-voice": "Search by voice",
+        "try-navigating": "Try navigating to"
     },
     "community": {
         "cta": "Join Community",
@@ -64,6 +65,7 @@
         "decrease": "Decrease",
         "increase": "Increase"
     },
+    "default-description": "The Quran translated into many languages in a simple and easy interface",
     "developers": "Developers",
     "error": {
         "general": "Something went wrong. Please try again.",
@@ -80,6 +82,7 @@
         "qcf-desc": "KPFG Fonts provide higher quality but take longer to load and cannot be copied through the browser.",
         "qpc_uthmani_hafs": "QPC Uthmani Hafs",
         "quran-font": "Quran Font",
+        "tajweed": "Tajweed",
         "text_indopak": "IndoPak",
         "text_uthmani": "Uthmani"
     },
@@ -100,13 +103,37 @@
     "next": "Next",
     "no": "No",
     "none": "None",
+    "off": "Off",
+    "on": "On",
     "page": "Page",
     "pages": "Pages",
     "pagination-summary": "{{currentResultNumber}}-{{endOfResultNumber}} of {{totalNumberOfResults}} search results",
     "powered-by": "Powered by",
     "prayer-times": {
+        "access-denied": "Access to location denied. Please enable location access to get accurate prayer times",
         "calculation-method": "Calculation Method",
+        "calculation-methods": {
+            "Dubai": "Dubai",
+            "Egyptian": "Egyptian",
+            "Karachi": "Karachi",
+            "Kuwait": "Kuwait",
+            "MoonsightingCommittee": "MoonsightingCommittee",
+            "MuslimWorldLeague": "MuslimWorldLeague",
+            "NorthAmerica": "NorthAmerica",
+            "Qatark": "Qatark",
+            "Singapore": "Singapore",
+            "Tehran": "Tehran",
+            "Turkey": "Turkey",
+            "UmmAlQura": "UmmAlQura"
+        },
+        "find-accurate-location": "Find Accurate Location",
+        "location-access": "Location Access",
+        "location-updated": "Prayer times location updated",
         "madhab": "Madhab",
+        "madhabs": {
+            "Hanafi": "Hanafi",
+            "Shafi": "Shafi"
+        },
         "title": "Prayer Times"
     },
     "prev": "Previous",
@@ -135,9 +162,14 @@
     },
     "settings": {
         "change-reciter": "Change Reciter",
+        "change-tafsirs": "Change Tafsirs",
         "change-translations": "Change Translations",
         "reading-experience": "Reading Experience",
         "reset-cta": "Reset Settings",
+        "reset-notif": "Your settings have been reset to the default ones",
+        "search-reciter": "Search Reciter",
+        "search-tafsirs": "Search Tafsirs",
+        "search-translations": "Search Translations",
         "title": "Settings"
     },
     "share": "Share",
@@ -176,6 +208,7 @@
     "transliteration": "Transliteration",
     "type": "Type",
     "verse": "Verse",
+    "verses": "Verses",
     "view": "View",
     "voice": {
         "ask-permission": "Please enable microphone permission to start using Voice Search",
@@ -185,6 +218,7 @@
         "suggest": "Please begin reciting and your verse will appear."
     },
     "wbw": "Word By Word",
+    "wbw-trans-lang": "Word By Word Language",
     "word-click": {
         "no-audio": "No Audio",
         "play-audio": "Play Audio",

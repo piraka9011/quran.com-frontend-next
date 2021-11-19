@@ -28,6 +28,9 @@
         "maghrib": "Maghrib",
         "sunrise": "Sunrise"
     },
+    "prayer-times": {
+        "use-location": "Use accurate location"
+    },
     "recently-read": "Recently Read",
     "tab": {
         "bookmarks": "Bookmarks",

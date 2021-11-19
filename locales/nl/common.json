@@ -8,6 +8,7 @@
         },
         "play": "Audio afspelen",
         "playback-speed": "Afspeelsnelheid",
+        "playback-speed-unit": "x",
         "player": {
             "close": "Sluit audiospeler",
             "currently-playing": "Je speelt momenteel",
@@ -47,6 +48,7 @@
         "placeholder": "Wat wil je lezen?",
         "powered-by": "Gesproken zoekopdracht mogelijk gemaakt door Tarteel.ai",
         "recent-navigations": "Recente navigatie",
+        "search-by-voice": "Zoek bij stem",
         "try-navigating": "Probeer te navigeren naar"
     },
     "community": {
@@ -63,6 +65,7 @@
         "decrease": "Verminderen",
         "increase": "Toename"
     },
+    "default-description": "De Koran vertaald in vele talen in een eenvoudige en gemakkelijke interface",
     "developers": "ontwikkelaars",
     "error": {
         "general": "Er is iets fout gegaan. Probeer het opnieuw.",
@@ -79,6 +82,7 @@
         "qcf-desc": "KPFG-lettertypen bieden een hogere kwaliteit, maar duren langer om te laden en kunnen niet via de browser worden gekopieerd.",
         "qpc_uthmani_hafs": "QPC Uthmani Hafs",
         "quran-font": "Koran lettertype",
+        "tajweed": "Tajweed",
         "text_indopak": "IndoPak",
         "text_uthmani": "Uthmani"
     },
@@ -99,13 +103,37 @@
     "next": "Volgende",
     "no": "Nee",
     "none": "Geen",
+    "off": "Uit",
+    "on": "Op",
     "page": "Bladzijde",
     "pages": "Pagina's",
     "pagination-summary": "{{currentResultNumber}} - {{endOfResultNumber}} van {{totalNumberOfResults}} zoekresultaten",
     "powered-by": "Aangedreven door",
     "prayer-times": {
+        "access-denied": "Toegang tot locatie geweigerd. Schakel locatietoegang in om nauwkeurige gebedstijden te krijgen",
         "calculation-method": "Rekenmethode",
+        "calculation-methods": {
+            "Dubai": "Dubai",
+            "Egyptian": "Egyptische",
+            "Karachi": "Karachi",
+            "Kuwait": "Koeweit",
+            "MoonsightingCommittee": "MoonsightingComité",
+            "MuslimWorldLeague": "MoslimWereldLeague",
+            "NorthAmerica": "Noord Amerika",
+            "Qatark": "Qatark",
+            "Singapore": "Singapore",
+            "Tehran": "Teheran",
+            "Turkey": "kalkoen",
+            "UmmAlQura": "UmmAlQura"
+        },
+        "find-accurate-location": "Vind nauwkeurige locatie",
+        "location-access": "Locatietoegang",
+        "location-updated": "Locatie gebedstijden bijgewerkt",
         "madhab": "Madhab",
+        "madhabs": {
+            "Hanafi": "Hanafi",
+            "Shafi": "Shafi"
+        },
         "title": "Gebedstijden"
     },
     "prev": "Vorig",
@@ -134,9 +162,14 @@
     },
     "settings": {
         "change-reciter": "Voordrager wijzigen",
+        "change-tafsirs": "Tafsir wijzigen",
         "change-translations": "Vertalingen wijzigen",
         "reading-experience": "Leeservaring",
         "reset-cta": "Reset instellingen",
+        "reset-notif": "Je instellingen zijn teruggezet naar de standaardinstellingen",
+        "search-reciter": "Zoek voordrager",
+        "search-tafsirs": "Tafsir zoeken",
+        "search-translations": "Vertalingen zoeken",
         "title": "Instellingen"
     },
     "share": "Deel",
@@ -175,6 +208,7 @@
     "transliteration": "Transliteratie",
     "type": "Type",
     "verse": "Vers",
+    "verses": "verzen",
     "view": "Weergave",
     "voice": {
         "ask-permission": "Schakel microfoontoestemming in om gesproken zoekopdrachten te gaan gebruiken",
@@ -184,6 +218,7 @@
         "suggest": "Begin alsjeblieft met reciteren en je vers zal verschijnen."
     },
     "wbw": "Woord voor woord",
+    "wbw-trans-lang": "Woord voor woord taal",
     "word-click": {
         "no-audio": "Geen geluid",
         "play-audio": "Audio afspelen",

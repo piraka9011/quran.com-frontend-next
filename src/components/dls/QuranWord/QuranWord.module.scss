@@ -6,6 +6,10 @@
   margin-inline-end: var(--spacing-xxsmall);
 }
 
+.hoveredTajweedWord {
+  background-color: var(--color-background-backdrop);
+}
+
 .wbwContainer {
   text-align: center;
   padding-block-start: var(--spacing-micro);
@@ -27,4 +31,12 @@
   padding-block-end: var(--spacing-micro);
   padding-inline-start: var(--spacing-micro);
   padding-inline-end: var(--spacing-micro);
+}
+
+.popoverTrigger {
+  // important is needed to over-ride the values of the popover
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0 !important;
 }
